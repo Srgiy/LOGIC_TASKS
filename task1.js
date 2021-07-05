@@ -1,7 +1,7 @@
 function minAndMax(arr) {
 let obj = {
-min : min(arr),
-max : max(arr)  
+    min : min(arr),
+    max : max(arr)  
 }
 function min(arr) {
     for (let i = 1; i < arr.length; i++) {
