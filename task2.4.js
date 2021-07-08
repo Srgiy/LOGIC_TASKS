@@ -1,9 +1,10 @@
 
 function makeStr (newStr = ""){
-    
+
     return function(str = ""){   
 
-            return newStr = newStr + str;
+        return newStr = newStr + str;
+        
     };
 };
 

@@ -1,10 +1,8 @@
-function amount(n) {
-    if (n > 0) {
-        return n = n + amount(n - 1)
-    } else if (n < 0){
-        return n = n + amount(n + 1)    
-    } else {
-        return n
+function mean(arr) {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i]
     }
+    return sum / arr.length
 }
-console.log(amount(-4))
+console.log(mean([4, 6, 12, 8, 10]))
