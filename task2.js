@@ -1,8 +1,19 @@
-function mean(arr) {
-    let sum = 0
-    for (let i = 0; i < arr.length; i++) {
-        sum = sum + arr[i]
+'use strict';
+
+const sarah = {
+    name: 'Sarah',
+    job: {
+      name: 'Andersen',
+      hiringDate: '23.07.2020'
     }
-    return sum / arr.length
-}
-console.log(mean([4, 6, 12, 8, 10]))
+  }
+  
+let {
+    name : userName,
+    job : {
+    name,
+    hiringDate,
+    }
+} = sarah
+
+console.log(userName)

@@ -1,11 +1,21 @@
-function isSorted(arr){
-    for (let i = 1; i < arr.length; i++) {
-        if (arr[i] >= arr[0]) {
-            arr[0] = arr[i]
-        } else {
-            return false
-        }
+'use strict';
+
+function delateId(arr) {
+    const unique = new Set()
+    let result = []
+    
+for (let i = 0; i < arr.length; i++){
+
+    if (unique.has(arr[i].id) == false){
+        result.push({id: arr[i].id})
     }
-    return true
+    unique.add(arr[i].id)   
+
 }
-console.log(isSorted([1, 2, 5, 3, 3, 5, 6, 12]))
+return result
+}
+
+console.log(delateId([{ id: 1 }, { id: 2 }, { id: 3 }, { id: 1 }]))
+
+
+
