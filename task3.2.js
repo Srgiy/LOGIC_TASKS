@@ -7,13 +7,9 @@ const sarah = {
       hiringDate: '23.07.2020'
     }
   }
-  
-let {
-    name : userName,
-    job : {
-    name,
-    hiringDate,
-    }
-} = sarah
 
-console.log(userName)
+function printJobName({job: {name}}) {
+  console.log(name)
+}
+
+printJobName(sarah)
