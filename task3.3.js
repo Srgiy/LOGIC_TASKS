@@ -1,8 +1,8 @@
 'use strict';
 
 function delateId(arr) {
-    const unique = new Set()
-    let result = []
+const unique = new Set()
+let result = []
     
 for (let i = 0; i < arr.length; i++){
 
